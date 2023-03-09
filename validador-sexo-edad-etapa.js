@@ -1,4 +1,5 @@
 
+
 function mensaje(nombre, edad, sexo) {
     if (typeof nombre === "string" && typeof sexo === "string" && typeof edad === "number" &&
       (sexo === "masculino" || sexo === "femenino")
@@ -22,3 +23,4 @@ function mensaje(nombre, edad, sexo) {
       return "Los datos ingresados no son vàlidos";
     }
   }
+
