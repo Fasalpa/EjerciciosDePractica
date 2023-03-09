@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        background-image: url("https://i.pinimg.com/originals/b1/d4/60/b1d460ed98ecb78923df9fadc0551289.png");
+        background-repeat: no-repeat;
+        background-position: 10% 10%;
+        background-size: cover;
+        height: 90vh;
+      }
+      section {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+      .fondo {
+        background-color: #0c897d;
+        height: 500px;
+        width: 30%;
+        overflow: hidden;
+        border-radius: 20px;
+        position: relative;
+        text-align: center;
+        border: thick double #eeeeed;
+      }
+      .fondo img:nth-child(1) {
+        width: 100%;
+        z-index: 5;
+      }
+      #foto2 {
+        background-image: url("https://i0.wp.com/www.senpai.com.mx/wp-content/uploads/2020/07/Demon-Slayer-celebra-el-cumpleanos-de-Tanjiro-Kamado.jpg?fit=1280%2C720&ssl=1");
+        background-position: center;
+        background-size: cover;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        z-index: 6;
+        position: absolute;
+        top: 35%;
+        right: 35%;
+        border: solid #4b2d2d 3px;
+      }
+      h1 {
+        color: #eeeeed;
+        position: absolute;
+        top: 58%;
+        right: 28%;
+        text-align: center;
+      }
+      h3 {
+        color: #eeeeed;
+        position: absolute;
+        top: 65%;
+        right: 34%;
+        text-align: center;
+      }
+      p {
+        color: #bdbdbd;
+        position: absolute;
+        top: 75%;
+        right: 60%;
+        text-align: center;
+      }
+      #dos2 {
+        position: absolute;
+        top: 75%;
+        right: 23%;
+        text-align: center;
+      }
+      hr {
+        position: absolute;
+        top: 75%;
+      }
+      p:hover {
+        cursor: pointer;
+        color: #863841;
+      }
+      hr {
+        background-color: #4b2d2d;
+        width: 80%;
+        height: 2px;
+        border-radius: 40%;
+        border-color: #4b2d2d;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 12%;
+      }
+      #follow{
+        position: absolute;
+        top: 80%;
+        right: 35%;
+        text-align: center;
+        font-size: 33px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="fondo">
+        <img
+          src="https://larepublica.cronosmedia.glr.pe/original/2022/01/28/61f4688f3bef011bd0107373.jpg"
+          alt="banner img"
+        />
+        <div id="foto2"></div>
+        <h1><b>Tanjiro Kamado</b></h1>
+        <h3>Demon Slayer</h3>
+        <p><b>Postura</b></p>
+        <p id="dos2"><b>Whatssap</b></p>
+        <hr />
+        
+        <p id="follow"><b>Follow</b></p>
+      </div>
+    </section>
+  </body>
+</html>

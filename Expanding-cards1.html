@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expading Cards</title>
+    <style>
+        *{
+            background: purple;
+            padding: 1px;
+        }
+        section{
+            display: flex;
+            width: 800px;
+            height: 700px;
+        }
+        section img{
+            width: 0px;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: .8;
+            transition: .5s ease;
+        }
+        section img:hover{
+            cursor: pointer;
+            width: 300px;
+            opacity: 1;
+            filter: contrast(120%);
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <img src="https://www.kienyke.com/sites/default/files/styles/interna_contenido_s/public/2023-02/Sin%20_0003_Fotografo_%20Instagram%20-%20%40the_ai_dreams.jpg?itok=E7k3uaBx" alt="Fotograsaurio">
+        <img src="https://www.kienyke.com/sites/default/files/styles/amp_1200x675_16_9/public/2023-02/Sin%20_0009_Quimico_%20Instagram%20-%20%40the_ai_dreams.jpg?itok=ThIx4UOf" alt="Quimicosaurio">
+        <img src="https://www.kienyke.com/sites/default/files/styles/interna_contenido_s/public/2023-02/Sin%20_0015_Bacteriologo_%20%20Instagram%20-%20%40the_ai_dreams.jpg?itok=QMFzIgcd" alt="Bacteriolosaurio">
+        <img src="https://www.kienyke.com/sites/default/files/styles/interna_contenido_s/public/2023-02/Sin%20_0001_Bailarin_%20%20Instagram%20-%20%40the_ai_dreams.jpg?itok=QExLmL5n" alt="Bailasaurio">
+        <img src="https://www.kienyke.com/sites/default/files/styles/interna_contenido_s/public/2023-02/Sin%20_0010_Policia_%20Instagram%20-%20%40the_ai_dreams.jpg?itok=ykpE0v0f" alt="Polisaurio">
+
+    </section>
+</body>
+</html>
