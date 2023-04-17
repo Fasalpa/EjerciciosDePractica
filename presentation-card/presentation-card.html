@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presentation Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --dark-color-1: #2a6041;
+        --medium-color: #8ba6a9;
+        --dark-color-2: #3d405b;
+        --light-color-2: #cacc90;
+        --light-color-1: #f7d6e0;
+      }
+
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: "Nunito", sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--medium-color);
+        height: 90vh;
+      }
+      .card {
+        position: relative;
+        background-color: var(--dark-color-1);
+        width: 700px;
+        height: 400px;
+        border-radius: 50px;  
+        overflow: hidden;
+      }
+      .image {
+        position: absolute;
+        background-color: var(--light-color-2);
+        width: 270px;
+        height: 90%;
+        top: -4px;
+        left: 60px;
+        border-radius: 10px 10px 161px 162px;
+        overflow: hidden;
+      }
+      img {
+        width: 100%;
+      }
+      .info {
+        position: absolute;
+        width: 300px;
+        height: 250px;
+        font-weight: 700;
+        text-align: justify;
+        top: 80px;
+        right: 50px;
+      }
+      h1 {
+        text-align: initial;
+        padding: 10px 0;
+        color: var(--light-color-2);
+        /* text-shadow: 0.1em 1px 0.1em; */
+      }
+      #project {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 5px;
+        background-color: var(--light-color-2);
+        width: 100px;
+        height: 40px;
+        border-radius: 134px 134px 134px 134px;
+        color: var(--dark-color-1);
+        padding: 5px 0;
+        margin-top: 50px;
+      }
+      #project:hover{
+        cursor: pointer;
+        color: var(--dark-color-2);
+        text-shadow: 0.1em 0.01px 0.1em;
+      }
+      #nombre {
+        color: azure;
+      }
+      p{
+        color: azure;
+        line-height: 25px;
+      }
+      #circle{
+        position: absolute;
+        top: 255px;
+        right: 555px;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        border: 9px solid;
+        color: var(--light-color-2);
+      }
+      #circle2{
+        position: absolute;
+        top: -220px;
+        right: 30px;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        border: 9px solid;
+        color: var(--light-color-2);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="card">
+        <div id="circle"></div>
+        <div id="circle2"></div>
+        <div class="image">
+          <img src="./foto.png" alt="Imagen" />
+        </div>
+        <div class="info">
+          <p><b id="nombre">Fabián Salamanca</b></p>
+          <h1>Estudiante Full Stack Developer</h1>
+          <p>
+            Tecnólogo en Gestión de Redes de Datos y técnico en sistemas con 6
+            años de experiencia en sistemas y enseñanza.
+          </p>
+          <div id="project"><b>Proyectos</b></div>
+        </div>
+    </section>
+  </body>
+</html>
